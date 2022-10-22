@@ -1,18 +1,18 @@
 main {
   margin: 0 auto;
-  max-width: 90%;
+  max-width: 100%;
   padding: 50px 30px;
 }
 :root {
-  --primary: #8c54ff;
-  --secondary: #f3a847;
-  --tertiary: #b12704;
-  --light: #fafafa;
-  --dark: #000000;
-  --darker: #111111;
+  --primary: #423f3f;
+  --secondary: #5e0303;
+  --tertiary: #dbd8d3b9;
+  --light: #5e0303;
+  --dark: #dbd8d3b9;
+  --darker: #5e0303;
   --error: rgb(228, 46, 1);
-  --spacing-one: calc(1rem * 0.5);
-  --spacing-two: calc(1rem);
+  --spacing-one: calc(3rem * 0.5);
+  --spacing-two: calc(3rem);
   --spacing-five: calc(2.5rem);
 }
 
@@ -34,7 +34,7 @@ body {
   letter-spacing: 0.1em;
   background: var(--dark);
   color: var(--light);
-  font-family: 'Poiret One', cursive;
+  font-family: 'Times new roman', cursive;
 }
 
 h1,
@@ -43,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Times new roman', sans-serif;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
@@ -110,6 +110,7 @@ button {
 
 button:hover {
   opacity: 0.8;
+  color:aqua;
 }
 
 button[disabled] {
