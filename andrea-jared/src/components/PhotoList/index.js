@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { capitalizeFirstLetter } from '../../utils/helpers';
 
-const PhotoList = ({category }) => {
-    const [photos] = useState([
+const PhotoList = () => {
+    const photos = [
         {
             name: 'Meal Time Roulette',
             category: 'Projects',
@@ -14,20 +15,28 @@ const PhotoList = ({category }) => {
             description:
             'A blog using Handlbarsjs, CSS, Mysql to create a user blog and database to collect data.'
         }
-    ]);
+    ];
     
-    const currentPhotos = photos.filter(photo => photo.category === category);
+    //const currentPhotos = photos.filter(photo => photo.category === category);
 
     return (
         <div>
         <div className="flex-row">
-          {currentPhotos.map((image, i) => (
+          {photos.map((image, i) => (
+            <div>
+             <h1 data-testid="h1tag">{capitalizeFirstLetter(image.name)}</h1> 
+             <p>{image.description}</p>
             <img
-              src={require(`../../assets/project_snips/${category}/${i}.jpg`).default}
+              src={require(`../../assets/project_snips/${i}.png`)}
               alt={image.name}
               className="img-thumbnail mx-1"
-              key={image.name}
+              key={i}
             />
+            
+            <p>
+              this is me testing
+            </p>
+            </div>
           ))}
         </div>
       </div>
