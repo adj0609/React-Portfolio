@@ -19,12 +19,14 @@ function App() {
 
   
 
-  const [contactSelected, setContactSelected] = useState(false);
+  const [contactSelected, setContactSelected, projectSelected, setProjectSelected, resumeSelected, setResumeSelected] = useState(false);
   return (
     <div>
       <Nav
-        categories={categories}
-
+        ProjectSelected={projectSelected}
+        setProjectSelected={setProjectSelected}
+        ResumeSelected={resumeSelected}
+        setResumeSelected={setResumeSelected}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
       ></Nav>
