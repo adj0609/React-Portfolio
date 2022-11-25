@@ -3,7 +3,14 @@ import { capitalizeFirstLetter } from '../../utils/helpers';
 
 const PhotoList = () => {
     const photos = [
-        {
+      {
+        name: 'Book-Nook-V2',
+        category: 'Projects',
+        description:
+        'A book site for children using mongodb, apollo, react and google-books API so children and parents can keep track of how many books they read and can search through a wide veriety of books.'
+    },
+
+      {
             name: 'Meal Time Roulette',
             category: 'Projects',
             description:
